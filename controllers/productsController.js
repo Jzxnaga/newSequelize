@@ -22,6 +22,21 @@ class ProductsController {
         next(err);
       });
   }
+
+  static async findAll(req, res, next) {
+    Products.findAll()
+      .then((data) => {
+        next(err)
+        next(err)
+        next(err)
+        
+        res.status(200).json(data);
+      })
+      .catch((err) => {
+        next(err);
+        next(err)
+      });
+  }
 }
 
 module.exports = ProductsController;
