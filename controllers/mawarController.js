@@ -1,0 +1,1 @@
+"halo, sebut saja saya mawar"
