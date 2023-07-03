@@ -41,6 +41,8 @@ class ProductsController {
         next(err)
       })
   }
+
+  
   static async huhu(req,res,next){
     Products.findAll()
       .then(data=>{
@@ -50,6 +52,7 @@ class ProductsController {
         next(err)
       })
       .catch((err) => {
+        console.log('done dini')
         next(err);
       });
   }
