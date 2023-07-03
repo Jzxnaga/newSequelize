@@ -15,8 +15,39 @@ const axios = require("axios");
 class ProductsController {
   static async findAll(req, res, next) {
     Products.findAll()
-      .then((data) => {
-        res.status(200).json(data);
+      .then(data=>{
+        res.status(200).json(data)
+      })
+      .catch(err=>{
+        next(err)
+        console.log("yawlohhhh");
+      })
+  }
+  static async haha(req,res,next){
+    Products.findAll()
+      .then(data=>{
+        res.status(200).json(data)
+      })
+      .catch(err=>{
+        next(err)
+      })
+  }
+  static async hihi(req,res,next){
+    Products.findAll()
+      .then(data=>{
+        res.status(200).json(data)
+      })
+      .catch(err=>{
+        next(err)
+      })
+  }
+  static async huhu(req,res,next){
+    Products.findAll()
+      .then(data=>{
+        res.status(200).json(data)
+      })
+      .catch(err=>{
+        next(err)
       })
       .catch((err) => {
         next(err);
